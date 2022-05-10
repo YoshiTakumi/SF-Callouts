@@ -43,9 +43,8 @@ public class OpportunityRestController_Test {
 
         insert oppInsert;
         
-        List<Opportunity> oppList = [SELECT Id FROM Opportunity];
         List<String> oppIds = new List<String>();
-        for(Opportunity opport : oppList){
+        for(Opportunity opport : oppInsert){
             oppIds.add(opport.Id);
         }
 
